@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MovieStore.Models;
 
 namespace MovieStore.Controllers
 {
@@ -11,7 +12,36 @@ namespace MovieStore.Controllers
         // GET: Movie
         public ActionResult Index()
         {
-            return View();
+            List<Movie> lista = new List<Movie>();
+            Movie mov1= new Movie();
+            mov1.Id = 18;
+            mov1.Title = "God";
+            mov1.Description = "Peace";
+            mov1.Rating = 1;
+            lista.Add(mov1);
+
+            Movie mov2 = new Movie();
+            mov2.Id = 19;
+            mov2.Title = "Minion";
+            mov2.Description = "aventure";
+            mov2.Rating = 2;
+            lista.Add(mov2);
+
+            Movie mov3 = new Movie();
+            mov3.Id = 20;
+            mov3.Title = "Amazing women";
+            mov3.Description = "Accion";
+            mov3.Rating = 3;
+            lista.Add(mov3);
+
+            Movie mov4 = new Movie();
+            mov4.Id = 21;
+            mov4.Title = "My Bestfriend";
+            mov4.Description = "Romantic";
+            mov4.Rating = 4;
+            lista.Add(mov4);
+
+            return View(lista);
         }
 
         // GET: Movie/Details/5
