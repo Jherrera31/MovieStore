@@ -15,3 +15,4 @@ Test   Project
 9. Merge Pull Request
 10. Move Task to Done
 11. Close Issue.
+12. Move to branch develop & pull
