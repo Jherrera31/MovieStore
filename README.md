@@ -12,7 +12,7 @@ Test   Project
 6. Commit changes to feature branch.
 7. Push changes to remote feature/branch
 8. Create Pull Request
-9. Merge Pull Request
-10. Move Task to Done
-11. Close Issue.
-12. Move to branch develop & pull
+9. Asign Willjobs as reviwer to your Pull request
+10. Merge Pull Request
+11. Move Task to Done
+12. Close Issue.
