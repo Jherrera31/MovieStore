@@ -7,27 +7,27 @@ using MovieStore.Models;
 
 namespace MovieStore.Controllers
 {
-    public class ArtistController : Controller
+    public class ActorController : Controller
     {
-        // GET: Artist
+        // GET: Actor
         public ActionResult Index()
         {
-            List<Artist> lista = new List<Artist>();
-            var artist1 = new Artist()
+            List<Actor> lista = new List<Actor>();
+            var artist1 = new Actor()
             {
                 Id=1,
                 Name="Jose",
                 LastName="Jose",
                 Age=74
             };
-            var artist2 = new Artist()
+            var artist2 = new Actor()
             {
                 Id = 2,
                 Name = "Juan Luis",
                 LastName = "Guerra",
                 Age = 60
             };
-            var artist3 = new Artist()
+            var artist3 = new Actor()
             {
                 Id = 3,
                 Name = "Romeo",
