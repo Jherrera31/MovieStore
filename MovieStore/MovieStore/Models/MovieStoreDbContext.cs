@@ -13,8 +13,9 @@
         // Si desea tener como destino una base de datos y/o un proveedor de base de datos diferente, 
         // modifique la cadena de conexión 'MovieStoreDbContext'  en el archivo de configuración de la aplicación.
         public MovieStoreDbContext()
-            : base("name=MovieStoreDbContext")
+            : base("name=MoviesStoreDb")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MovieStoreDbContext, MovieStore.Migrations.Configuration>("MoviesStoreDb"));
         }
 
         // Agregue un DbSet para cada tipo de entidad que desee incluir en el modelo. Para obtener más información 

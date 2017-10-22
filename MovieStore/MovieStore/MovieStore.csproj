@@ -157,6 +157,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\BaseEntity.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Actor.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieStoreDbContext.cs" />
