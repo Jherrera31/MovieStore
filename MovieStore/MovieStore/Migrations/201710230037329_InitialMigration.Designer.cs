@@ -13,7 +13,7 @@ namespace MovieStore.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201710230008331_InitialMigration"; }
+            get { return "201710230037329_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

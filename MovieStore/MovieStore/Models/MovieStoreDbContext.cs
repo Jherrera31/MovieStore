@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity;
     using System.Linq;
-
+    using Migrations;
     public class MovieStoreDbContext : DbContext
     {
         // El contexto se ha configurado para usar una cadena de conexión 'MovieStoreDbContext' del archivo 
@@ -15,7 +15,7 @@
         public MovieStoreDbContext()
             : base("name=MoviesStoreDb")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MovieStoreDbContext, MovieStore.Migrations.Configuration>("MoviesStoreDb"));
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MovieStoreDbContext, Configuration>("MoviesStoreDb"));
         }
 
         // Agregue un DbSet para cada tipo de entidad que desee incluir en el modelo. Para obtener más información 
